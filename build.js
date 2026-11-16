@@ -4,7 +4,7 @@
  * Usage:   node build.js
  * Options (environment variables):
  *   SITE_URL       Public URL of the site, no trailing slash. Used for canonical URLs, sitemap, Open Graph.
- *                  Default: https://pdfnook.pages.dev  (change it to your real pages.dev address)
+ *                  Default: https://pdfnook.hoshmuhammad2001.workers.dev
  *   CONTACT_EMAIL  Address shown on the Contact page. Default: aaliyasoomro786@gmail.com
  *
  * It reads assets/js/tools-data.js and writes every HTML page, sitemap.xml and robots.txt.
@@ -15,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 const { TOOLS, CATEGORIES } = require('./assets/js/tools-data.js');
 
-const SITE_URL = (process.env.SITE_URL || 'https://pdfnook.pages.dev').replace(/\/+$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://pdfnook.hoshmuhammad2001.workers.dev').replace(/\/+$/, '');
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'aaliyasoomro786@gmail.com';
 const BRAND = 'pdfnook';
 const UPDATED = new Date().toISOString().slice(0, 10);

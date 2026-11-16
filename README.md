@@ -56,7 +56,7 @@ Do not open `index.html` by double-click (`file://`): browsers block ES modules 
 After changing `tools-data.js` or `build.js`, regenerate pages:
 
 ```bash
-SITE_URL=https://pdfnook.pages.dev CONTACT_EMAIL=aaliyasoomro786@gmail.com node build.js
+SITE_URL=https://pdfnook.hoshmuhammad2001.workers.dev CONTACT_EMAIL=aaliyasoomro786@gmail.com node build.js
 ```
 
 ## 3. Test all tools
@@ -99,9 +99,9 @@ git push -u origin main
    - Framework preset: **None**
    - Build command: *(leave empty)*
    - Build output directory: **`/`** (root)
-4. **Save and Deploy.** In about a minute you get `https://pdfnook.pages.dev` (or `pdfnook-xxx.pages.dev` if the name is taken).
+4. **Save and Deploy.** In about a minute you get a `*.pages.dev` address.
 5. **Important — set your real URL.** Canonical links, Open Graph tags and the sitemap contain the site URL. Run
-   `SITE_URL=https://YOUR-REAL-ADDRESS.pages.dev node build.js`, commit and push. Cloudflare redeploys automatically.
+   `SITE_URL=https://pdfnook.hoshmuhammad2001.workers.dev node build.js`, commit and push. Cloudflare redeploys automatically.
 
 Alternative: **GitHub Pages** (repo → Settings → Pages → Deploy from branch `main` / root). If your address is `username.github.io/toolnest-pdf/` (a sub-folder), absolute URLs like `/merge-pdf/` in `404.html` and the canonical tags need that prefix; Cloudflare Pages (served from the domain root) is simpler.
 
